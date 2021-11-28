@@ -1,0 +1,293 @@
+/**
+Theme Name: U-Digital V2
+Author: Ayu Candrawati
+Author URI: https://u-digital.nl
+Description: U-Digital
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive-layout
+Text Domain: u-digital
+**/
+
+.orange-btn {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f36001;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+.orange-btn:hover {
+  background-color: #e25901;
+  color: #fff;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.breadcrumb-item.active {
+  font-weight: bold;
+}
+
+nav ul li {
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+nav ul li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 0;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  height: 3px;
+  background-color: #f36001;
+}
+nav ul li ul.dropdown-menu li:hover::after {
+  background-color: transparent;
+}
+#navbarSupportedContent ul li,
+#navbarTop ul li {
+  list-style: none;
+}
+#navbarSupportedContent ul li a,
+#navbarSupportedContentMb ul li a {
+  color: #000;
+}
+#navbarSupportedContent ul li a:hover {
+  color: #002366;
+}
+#navbarSupportedContent ul {
+  margin-bottom: 0;
+}
+#navbarSupportedContent .menu-item,
+#navbarTop .menu-item {
+  padding: 0 5px;
+}
+.dropdown-menu.allah-light {
+  background-color: #fff;
+  width: max-content;
+}
+ul.dropdown-menu.allah-light li {
+  padding: 0;
+  margin: 0;
+}
+ul.dropdown-menu.allah-light li:hover {
+  background-color: #e9e9e9 !important;
+}
+ul.dropdown-menu.allah-light li a {
+  color: #000 !important;
+}
+ul.dropdown-menu.allah-light li a:hover {
+  color: #000 !important;
+}
+ul.dropdown-menu li ul.dropdown-menu {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-15%);
+}
+.mobile-menu ul.dropdown-menu {
+  display: block;
+  background-color: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.75rem;
+  margin-bottom: 0;
+}
+.mobile-menu ul.dropdown-menu li a {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+.mobile-menu ul.dropdown-menu li ul.dropdown-menu {
+  padding-top: 1rem;
+}
+.mobile-menu ul.dropdown-menu li ul.dropdown-menu li:last-child a {
+  padding-bottom: 0;
+}
+.header-top {
+  background-color: #f36001;
+  color: #c23e02;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.header-top a:hover {
+  color: #c23e02;
+}
+
+.main-header {
+  background-color: #f0f0f0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.content-wrapper {
+  padding-bottom: 3rem;
+}
+
+.form-control {
+  background-color: #eee;
+  border-radius: 0;
+}
+
+.sosmed-icon {
+  display: inline-flex;
+  margin-top: 2rem;
+}
+
+.box-s-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9c9c9;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.box-s-icon:hover {
+  background-color: #343434;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: #f5f6f6;
+  color: #6d6d6d;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 400;
+  line-height: normal;
+  color: #f36001;
+}
+
+a {
+  text-decoration: none;
+  color: #6d6d6d;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f36001;
+  cursor: pointer;
+}
+
+.btn,
+a {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  display: block;
+}
+
+section,
+.bi-content,
+.bi-page-content {
+  line-height: 1.75rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-menu .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .mobile-menu nav ul li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-menu nav ul li:hover::after {
+    background-color: inherit;
+    color: #000;
+  }
+
+  .mobile-menu nav ul li ul li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu nav ul.dropdown-menu li {
+    border-bottom: none;
+  }
+
+  .dropdown-menu {
+    width: max-content;
+    background-color: inherit;
+    border: none;
+  }
+
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-item .submenu.dropdown-menu {
+    display: block !important;
+    position: relative;
+    left: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .box-reachus {
+    margin-top: 4rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
